@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 125px 1fr 125px;
+    margin: 0% 23% 0% 23%;
+    font-family: 'Architects Daughter', cursive;
+    font-family: 'Lato', sans-serif;
+    background-color: #66AAD7;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+
+header {
+    display: grid;
+}
+
+.titulo{
+    display: grid;
+    height: 100%;
+    place-items: center;
+}
+
+img[alt~=logo]{
+    height: 8.5em;   
+}
+
+
+
+
+
+
+
+
+
+
+
+main {
+    display: grid;
+    grid-template-rows: 4fr 2fr;
+    row-gap: 10px;
+}
+.rv__prin {
+    display: grid;
+    grid-template-areas:
+        "principal secundaria"
+        "principal secundaria";
+    gap: 10px;
+    grid-template-columns: 8fr 5fr;
+}
+
+
+
+
+.começo{
+     align-items: center;
+}
+
+.img__principal {
+    grid-area: principal;
+    background-image: url(./img/img10_su.jpg);
+    background-size: cover;
+    display: grid;
+    place-items: end start;
+}
+
+
+
+
+
+
+
+
+.faixa__informacoes {
+    background-color: rgb(242, 172, 197, 0.8);  
+    height: 2em;
+    width: 100%;
+    display: grid;
+    opacity: 0;
+    transition-duration: .2s;
+    border-radius: 0px 0px 10px 10px;
+}
+
+
+.mensagens {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+
+.informacoes a {
+    text-decoration: none;
+    color: white;
+    opacity: 1;
+    font-size: 0.7rem;
+}
+
+div[alt~="img"] > .faixa__informacoes{
+    place-self: end start;
+}
+
+
+
+
+
+
+
+div[alt~="imgp"]:hover > .faixa__informacoes{
+    opacity: 1;
+}
+
+div[alt~="img"]:hover > .faixa__informacoes{
+    opacity: 1;
+}
+
+.informacoes a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+.img__secundaria {
+    grid-area: secundaria;
+    display: grid;
+    grid-template-areas:
+        "img1 img2"
+        "img3 img4";
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+
+
+
+.img__secundaria > div{
+    display: grid;
+}
+
+.img1 {
+    background-image: url(./img/img1_su.jpg);
+    background-size: cover;
+    grid-area: img1;
+
+}
+
+.img2 {
+    background-image: url(./img/img3-2_su.jpg);
+    background-size: cover;
+    grid-area: img2;
+
+}
+
+.img3 {
+    background-image: url(./img/img3_su.jpg);
+    background-size: cover;
+    grid-area: img3;
+}
+
+.img4 {
+    background-image: url(./img/img4_su.jpg);
+    background-size: cover;
+    grid-area: img4;
+}
+
+
+
+
+
+
+.faixa__secundaria {
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: 2fr 2fr 3fr;
+}
+  
+
+
+
+
+.faixa__secundaria > div{
+    display: grid;
+}
+
+
+.img5 {
+    background-image: url(./img/img9_su.png);
+    background-size: cover;
+}
+
+.img6 {
+    background-image: url(./img/img12_su.jpg);
+    background-size: cover;
+}
+
+.img7 {
+    background-image: url(./img/img11_su.jpg);
+    background-size: cover;
+}
+
+
+
+
+
+
+div[alt~="img"]:hover > .faixa__informacoes{
+    opacity: 1;
+    color: white;
+}
+
+div[alt~="img"]:hover{
+    transform: scale(1.2);
+}
+
+div[alt~="imgp"]:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ver__mais {
+    border-radius: 50px;
+    background-color: #bd848d;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    font-size: 1.3em;
+    display: flex;
+    justify-content: center;
+}
+
+.ver__mais * {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+
+.ver__mais:hover {
+    background-color: #cc9ca2;
+    border-style: solid;
+    border-color: #bd848d;
+    transform: scale(1.1);
+}
+
